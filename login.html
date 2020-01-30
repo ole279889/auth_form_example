@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=426, initial-scale=1">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="login">
+      <div class="login-tab">
+        <button class="login-tablinks active" onclick="openTab(event, 'SIGN_IN')">SIGN IN</button>
+        <button class="login-tablinks" onclick="openTab(event, 'SIGN_UP')">SIGN UP</button>
+		<div id='slider'></div>
+      </div>
+
+      <div class="login-tabcontent-container">
+	  
+	    <div class="login-tabcontent-slides" id="slides">
+	  
+          <div id="SIGN_IN" class="login-tabcontent">
+	  
+            <div class="form-section">
+              <label class="field__title">Username</label>
+              <input class="input-field" type="text"/>
+            </div>
+
+            <div class="form-section">
+              <label class="field__title">Password</label>
+              <input class="input-field" type="password"/>
+            </div>
+
+            <div class="form-toggle-section">
+			  <div id="toggle">
+			    <input type="checkbox" name="slide-toggle" id="slide-toggle" class="slide-toggle"/>
+                <label for="slide-toggle" class="slide-toggle-label" data-off="NO" data-on="YES"></label>
+              </div>
+			  <label class="toggle-label">CHOOSE SOMETHING</label>
+			</div>
+
+            <div class="form-section">
+              <button class="submit-button">
+                SIGN IN
+              </button>
+            </div>
+		
+		    <div class="form-section"><br></div>
+		
+		    <div class="signin-footer">
+              <span>Ne razobrat 4to za text</span>
+            </div>
+          </div>
+
+          <div id="SIGN_UP" class="login-tabcontent">			  
+        
+		    <div class="form-section">
+              <label class="field__title">Username</label>
+              <input class="input-field" type="text"/>
+            </div>
+
+            <div class="form-section">
+              <label class="field__title">Password</label>
+              <input class="input-field" type="password"/>
+            </div>
+
+            <div class="form-section">
+              <label class="field__title">Username</label>
+              <input class="input-field" type="text"/>
+            </div>
+
+            <div class="form-section">
+              <label class="field__title">Password</label>
+              <input class="input-field" type="password"/>
+            </div>
+
+            <div class="form-section"><br></div>
+
+            <div class="form-section">
+              <button class="submit-button">
+                SIGN UP
+              </button>
+            </div>
+		
+          </div>
+        
+		</div>
+		
+	  </div>
+
+    </div>
+	<script type="text/javascript" src="login.js"></script>
+  </body>
+</html>
