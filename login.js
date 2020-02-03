@@ -4,22 +4,24 @@ function openTab(event, actionType) {
   
   slidesContainer = document.getElementById("slides");
   if (actionType === 'SIGN_IN') {
-    slidesContainer.style.left = '0px';
+	slidesContainer.classList.remove("slides-choose-signup");
+	slidesContainer.classList.add("slides-choose-signin");
   } else if (actionType === 'SIGN_UP') {
-    slidesContainer.style.left = '-526px';
+	slidesContainer.classList.remove("slides-choose-signin");
+	slidesContainer.classList.add("slides-choose-signup");
   }
 
   slider = document.getElementById("slider");
   if (slider) {
-	  slider.style.left = event.target.offsetLeft.toString() + "px";
+	  slider.style.left = event.target.offsetLeft + "px";
   }
 
   tablinks = document.getElementsByClassName("login-tablinks");
   if (tablinks && tablinks.length) {
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].classList.remove("login-tablinks-active");
     }
   }
   
-  event.currentTarget.className += " active";
+  event.currentTarget.classList.add("login-tablinks-active");
 }

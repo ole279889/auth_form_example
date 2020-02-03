@@ -9,7 +9,7 @@
   <body>
     <div class="login">
       <div class="login-tab">
-        <button class="login-tablinks active" onclick="openTab(event, 'SIGN_IN')">SIGN IN</button>
+        <button class="login-tablinks login-tablinks-active" onclick="openTab(event, 'SIGN_IN')">SIGN IN</button>
         <button class="login-tablinks" onclick="openTab(event, 'SIGN_UP')">SIGN UP</button>
 		<div id='slider'></div>
       </div>
@@ -18,15 +18,15 @@
 	  
 	    <div class="login-tabcontent-slides" id="slides">
 	  
-          <div id="SIGN_IN" class="login-tabcontent">
+          <div id="SIGN_IN" class="login-tabcontent margin-100-right">
 	  
             <div class="form-section">
-              <label class="field__title">Username</label>
+              <label class="field-title">Username</label>
               <input class="input-field" type="text"/>
             </div>
 
             <div class="form-section">
-              <label class="field__title">Password</label>
+              <label class="field-title">Password</label>
               <input class="input-field" type="password"/>
             </div>
 
@@ -44,8 +44,7 @@
               </button>
             </div>
 		
-		    <div class="form-section"><br></div>
-		
+		    <hr class="delimiter-line"> 
 		    <div class="signin-footer">
               <span>Ne razobrat 4to za text</span>
             </div>
@@ -54,26 +53,24 @@
           <div id="SIGN_UP" class="login-tabcontent">			  
         
 		    <div class="form-section">
-              <label class="field__title">Username</label>
+              <label class="field-title">Username</label>
               <input class="input-field" type="text"/>
             </div>
 
             <div class="form-section">
-              <label class="field__title">Password</label>
+              <label class="field-title">Password</label>
               <input class="input-field" type="password"/>
             </div>
 
             <div class="form-section">
-              <label class="field__title">Username</label>
+              <label class="field-title">Username</label>
               <input class="input-field" type="text"/>
             </div>
 
-            <div class="form-section">
-              <label class="field__title">Password</label>
+            <div class="form-section-double-margin">
+              <label class="field-title">Password</label>
               <input class="input-field" type="password"/>
             </div>
-
-            <div class="form-section"><br></div>
 
             <div class="form-section">
               <button class="submit-button">
